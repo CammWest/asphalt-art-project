@@ -1,0 +1,186 @@
+import org.code.neighborhood.*;
+
+public class PrismPainter extends MuralPainter {
+  public void drawPrism() {
+    drawOutline();
+  }
+
+/*
+  *draws the outline of the Prism
+  */
+  public void drawOutline(){
+   
+    //starting spot
+    move();
+    move();
+    move();
+    move();
+    move();
+    move();
+    move();
+    turnRight();
+    move();
+    
+    //start
+    paintLine("HotPink",1);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("HotPink",1);
+    turnRight();
+    paintLine("Thistle",1);
+    turnLeft();
+    paintLine("HotPink",2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("HotPink",2);
+    turnRight();
+    paintLine("Thistle",1);
+    turnLeft();
+    paintLine("HotPink",2);
+    turnRight();
+    paintLine("Thistle",1);
+    turnLeft();
+    paintLine("HotPink",2);
+    turnRight();
+    move();
+    turnLeft();
+    paintLine("HotPink",2);
+    turnLeft();
+    move();
+    paintLine("SlateBlue",2);
+    turnRight();
+    paintLine("Thistle",1);
+    turnLeft();
+    paintLine("SlateBlue",2);
+    turnRight();
+    paintLine("Tan",1);
+    turnLeft();
+    paintLine("SlateBlue",2);
+    paintLine("DarkSlateBlue",1);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("DarkSlateBlue",1);
+    turnLeft();
+    paintLine("DarkSlateBlue",1);
+    paintLine("Thistle",1);
+    turnAround();
+    move();
+    turnLeft();
+    move();
+    paintLine("DarkSlateBlue",1);
+    turnLeft();
+    paintLine("DarkSlateBlue",1);
+    paintLine("Thistle",1);
+    turnAround();
+    move();
+    turnLeft();
+    move();
+    turnLeft();
+    paintLine("DarkSlateBlue",2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("DarkSlateBlue",2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("DarkSlateBlue",2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("DarkSlateBlue",2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("DarkSlateBlue",2);
+    turnLeft();
+    move();
+    turnRight();
+    paintLine("DarkSlateBlue",1);
+  }
+
+/*
+  *paints the left half of the inside of the prism
+  */
+  public void fillInsideLeft() {
+    paintLine("White",12);
+    turnRight();
+    paintLine("White",1);
+    turnRight();
+    move();
+    paintLine("White",2);
+    paintLine("Tan",3);
+    paintLine("White",2);
+    paintLine("Tan",3);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    move();
+    paintLine("White",3);
+    paintLine("Tan",3);
+    paintLine("White",3);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    move();
+    paintLine("Tan",1);
+    paintLine("White",2);
+    paintLine("Tan",2);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    move();
+    move();
+    paintLine("White",1);
+    paintLine("Tan",2);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    paintLine("White",2);
+  }
+
+/*
+  *paints the right half of the inside of the prism
+  */
+  public void fillInsideRight() {
+    paintLine("BlanchedAlmond",11);
+    turnLeft();
+    paintLine("BlanchedAlmond",1);
+    turnLeft();
+    move();
+    paintLine("BlanchedAlmond",2);
+    paintLine("RoyalBlue",4);
+    paintLine("BlanchedAlmond",3);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    move();
+    move();
+    paintLine("LightPink",1);
+    paintLine("BlanchedAlmond",1);
+    paintLine("RoyalBlue",4);
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+    paintLine("BlanchedAlmond",1);
+    paintLine("RoyalBlue",1);
+    paintLine("BlanchedAlmond",1);
+    paintLine("LightPink",1);
+    turnRight();
+    move();
+    turnRight();
+    move();
+    move();
+    move();
+    paintLine("BlanchedAlmond",1);
+  }
+}
